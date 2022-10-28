@@ -53,7 +53,7 @@ function App() {
         setMessage({ success: "Signature validated successfully (-_-)" });
       else setMessage({ error: "Signature validation failed!" });
     } catch (error) {
-      setMessage(error);
+      setMessage({ error });
     }
   };
 
